@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:ital@1&family=Roboto:ital,wght@1,300&display=swap');
+
+:root{
+    --font1 : 'Lato', sans-serif;
+    --font2: 'Libre Baskerville', serif;
+    --prim: rgb(74, 165, 240);
+}
+
+.max-width1{
+    max-width: 60vw;
+}
+
+.max-width2{
+    max-width: 80vw;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.ptop{
+    padding-top: 15px;
+}
+
+.mtop{
+    margin-top: 20px;
+}
+
+.textsize{
+    font-size: medium;
+    font-weight: lighter;
+    color: black;
+}
+
+.red{
+    color: rgb(243 0 82);
+}

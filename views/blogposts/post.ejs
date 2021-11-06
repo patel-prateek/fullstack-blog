@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+</head>
+<body>
+    <html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/utility.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/blogpost.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <title>Blog</title>
+</head>
+ 
+<body>
+    <nav class="navigation max-width2 m-auto">
+        <div class="left">
+            <span style="font-size: 20px;">iBLOG</span>
+            <ul style="font-size: 15px;">
+                <li><a href="/">HOME</a></li>
+            </ul>
+
+        </div>
+       
+    </nav>
+
+    <div class="max-width2 m-auto">
+        <hr style="border: 2px solid brown;">
+    </div>
+
+    
+    <div class="blog">
+        <div class="title">
+            <h1><%= article.title %></h1>
+        </div>
+        <span id="blogpic" class="m-auto">
+            <img src="/img/philosophy.jpg" alt="">
+        </span>
+        <div class="blog-content max-width1 m-auto">
+            <div class="auther">
+                <img src="/img/auther.png" alt="">
+                <h3>Auther - <%= article.author %></h3>
+                <a href="/articles/edit/<%= article.id %>" class="btn">EDIT</a>
+            </div>
+            <div class="blog-text">
+                <%= article.des %>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-width2 m-auto">
+        <hr style="border: 2px solid brown;">
+    </div>
+
+
+    <div class="footer">
+        <h3>Copyright &copy; Prateek patel</h3>
+        <a href="https://www.vecteezy.com/free-vector/blog">Blog Vectors by Vecteezy</a>
+    </div>
+</body>
+
+</html>
+</body>
+</html>

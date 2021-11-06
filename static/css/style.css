@@ -1,0 +1,159 @@
+#newArticle{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: var(--font1);
+    color: brown;
+    font-weight: bold;
+    font-size: large;
+    border-bottom: 2px solid brown;
+}
+
+#newArticle:hover{
+    color: rgb(90, 2, 2);
+}
+
+
+.navigation{
+    font-family: var(--font1);
+    background-color: rgb(228, 95, 72);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.right{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left ul{
+    display: flex;
+    align-items: center;
+}
+
+.left ul li{
+    list-style: none;
+    margin: 0 14px;
+}
+
+.left ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.left ul li a:hover{
+    color: var(--prim);
+}
+
+.searchbox{
+    position: relative;
+    top: 10px;
+    border: 2px solid black;
+    padding: 3px 8px;
+    border-radius: 8px;
+}
+
+.btn{
+    position: relative;
+    top: 10px;
+    border: 2px solid black;
+    padding: 3px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    color: white;
+    background-color: var(--prim);
+}
+/* navigation */
+
+/* content */
+.content{
+    /* height: 300px; */
+    /* background-color: rgb(206, 153, 206); */
+    display: flex;
+
+}
+
+.content-right{
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+}
+.content-right img{
+    border: 4px solid rgb(117, 117, 243);
+    border-radius: 56px;
+}
+
+.content-left{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* CONTENT */
+
+/* Articles */
+
+
+
+.articles{
+    padding-left: 20px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+
+.article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p{
+    max-height: 110px;
+    overflow: hidden;
+}
+
+.article a{
+    text-decoration: none;
+    color: rgb(255, 126, 6);
+}
+
+h1{
+    font-family: var(--font2);
+}
+
+.articleimg{
+    padding: 20px;
+    padding-top: 0px;
+}
+
+/* articles */
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.footer a{
+    text-decoration: none;
+    font-family: var(--font1);
+    color: brown;
+    font-weight: bold;
+}

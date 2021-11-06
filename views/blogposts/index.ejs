@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>index.ejs</title>
+</head>
+
+<body>
+    <nav class="navigation max-width2 m-auto">
+        <div class="left">
+            <span style="font-size: 20px;">BLOGGER'S HEAVEN</span>
+            <ul style="font-size: 15px;">
+                <li><a href="/">HOME</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="max-width2 m-auto">
+        <hr style="border: 2px solid brown;">
+    </div>
+
+    <div class="content max-width2 m-auto">
+        <div class="content-left">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aliquid facere, sint sequi nisi tenetur?
+            </p>
+            <p>Whenever I am feeling low, worrying about the future, YourStory is what I refer to reading. Yourstory is
+                the perfect place on the web to learn how the great leaders were born. This is one of the popular blogs
+                in India that mainly covers startup related stuff to inspire people around online.</p>
+        </div>
+        <div class="content-right">
+            <img src="img/img1.jpg" alt="iblog">
+        </div>
+    </div>
+
+    <div class="max-width2 m-auto">
+        <hr style="border: 2px solid brown;">
+    </div>
+
+    <div class="articles max-width2 m-auto">
+        <h1>Featured Articles</h1>
+
+        <% articles.forEach(article => { %>
+        <div class="article">
+            <!-- <div class="articleimg"><img src="img/blog.jpg" alt=""></div> -->
+            <div class="text">
+                <a href="/articles/<%= article.id %>">
+                    <h1><%= article.title %></h1>
+                </a>
+                <h4>Arthur Name : <%= article.author %></h4>
+                <div><%= article.date.toLocaleDateString() %></div>
+                <p>
+                    <%= article.des %>
+                </p>
+                <form action="/articles/<%= article.id %>?_method=DELETE" method="post">
+                    <button type="submit" class="btn">Delete </button>
+                </form>
+            </div>
+        </div>
+        <div class="">
+            <hr style="border: 2px solid brown; margin: 0 0 0 0; padding: 0 0 0 0;">
+        </div>
+        <% });  %>
+
+        <a href="/articles/new" id="newArticle">Add New Article</a>
+    </div>
+
+    <div class="footer">
+        <h3>Copyright &copy; Prateek patel</h3>
+        <a href="https://www.vecteezy.com/free-vector/blog">Blog Vectors by Vecteezy</a>
+    </div>
+</body>
+
+</html>

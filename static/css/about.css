@@ -1,0 +1,28 @@
+.items{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 20px 30px;
+    height: 85vh;
+    padding: 20px 30px 20px 30px ;
+}
+
+.img{
+    height: 100%;
+    width: 551%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.left ul {
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
