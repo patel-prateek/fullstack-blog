@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
-
 module.exports=async () =>{
-    await mongoose.connect('mongodb+srv://Prateek:Dontaskagain12@blog.wvc6r.mongodb.net/Blog?retryWrites=true&w=majority',{
+    await mongoose.connect(process.env.DBurl,{
         useNewUrlParser : true,
         useUnifiedTopology : true
     });

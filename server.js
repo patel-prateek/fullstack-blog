@@ -27,7 +27,10 @@ async function connectToMongoDB(user) {
 
 express.static("static")
 
+
+if(process.env.NODE_ENV =="production"){
 app.use(express.static("static"));
+}
 app.use(express.urlencoded({ extended: false }))
 app.use(methodOverride('_method'))
 
